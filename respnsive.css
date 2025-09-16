@@ -1,0 +1,46 @@
+@media (max-width: 458px) {
+    .container {
+        width: 300px;
+    }
+
+    .buttons {
+        margin: 20px 0;
+        gap: 10px;
+    }
+
+    button {
+        font-size: 30px;
+    }
+
+    #tesoura {
+        width: 60px;
+    }
+
+    p {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 300px) {
+    .container {
+        width: 185px;
+    }
+
+    .container h1 {
+    font-size: 30px;
+}
+
+    button {
+        font-size: 20px;
+    }
+
+    #tesoura {
+        width: 45px;
+    }
+
+    p {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+}

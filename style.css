@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {   /*Link provisório até acharum que troque as imagens automaticamente*/
+    background: url('./assets/backgrounds/JoKemPo1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*Adicionado as 3 linhas abaixo para melhor estilizar ( ficar mais bonito)*/
+    width: 450px;
+    height: 350px;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container h1 {
+    font-size: 60px;
+    color: black; /* cor principal do texto */
+    animation: neon-gold 2s infinite alternate;
+}
+
+@keyframes neon-gold {
+    0% {
+        text-shadow: 0 0 5px #fff, 
+                     0 0 10px #FFD700, 
+                     0 0 20px #FFD700;
+    }
+    50% {
+        text-shadow: 0 0 20px #fff, 
+                     0 0 40px #FFD700, 
+                     0 0 60px #FFD700;
+    }
+    100% {
+        text-shadow: 0 0 10px #fff, 
+                     0 0 20px #FFD700, 
+                     0 0 30px #FFD700;
+    }
+}
+
+.buttons {
+    margin: 30px 0;
+    display: flex;
+    gap: 40px;
+}
+
+button {
+    padding: 10px;
+    font-size: 60px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+#pedra {
+    background-color: #a200ff;
+}
+
+#papel {
+    background-color: #9ee01a;
+}
+
+#tesoura {
+    background-color: #7dbeed;
+    /*Adicionado abaixo para melhor estilizar ( ficar mais bonito)*/
+    width: 100px;
+}
+
+p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.your-score span {
+    color: rgb(20, 245, 20);
+}
+
+.machine-score span{
+    color: red;
+}
+
