@@ -77,8 +77,8 @@ JoKemPo/
 ---
 
 ## 👨‍💻 Autor  
-Projeto desenvolvido por **[Seu Nome]** 🚀  
-📌 Portfólio: [seu-linkedin-ou-site]  
+
+📌 <a href="https://alexandresilva78.github.io/Jogo-JoKemP-/">Portfólio clicando aqui</a>
 
 ---
 ✨ Divirta-se jogando o clássico **JoKemPô** em versão digital!
