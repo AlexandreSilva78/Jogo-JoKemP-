@@ -27,7 +27,7 @@ const playHuman = (humanChoice) => {
 
 const GAME_OPTIONS = {
     ROCK: 'rock', // É só trocar o nome dentro das aspas para trocar o mesmo em todo o código.
-    PAPER: 'paper',    
+    PAPER: 'paper',
     ASISSORS: 'scissors'
 }
 /* humanScoreNumber -> Camel Case; devido as letras maiusculas darem a impressão da corcova de camelo.
@@ -47,7 +47,19 @@ const result = document.querySelector('.result')
 
 const playTheGame = (human, machine) => {
     console.log('Humano:' + human + "Maquina:" + machine)
+    
+    document.querySelectorAll('.buttons button').forEach(btn => {
+        btn.classList.remove('machine-choice');
+    });
 
+    // 🔴 Destaca a escolha atual da máquina
+    if (machine === GAME_OPTIONS.ROCK) {
+        document.getElementById('pedra').classList.add('machine-choice');
+    } else if (machine === GAME_OPTIONS.PAPER) {
+        document.getElementById('papel').classList.add('machine-choice');
+    } else if (machine === GAME_OPTIONS.ASISSORS) {
+        document.getElementById('tesoura').classList.add('machine-choice');
+    }
     if (human === machine) {
         result.innerHTML = "Deu Empate!"
 
@@ -57,7 +69,7 @@ const playTheGame = (human, machine) => {
         (human === 'paper' && machine === 'rock') ||
         (human === 'rock' && machine === 'scissors') ||
         (human === 'scissors' && machine === 'paper')
-    ){
+    ) {
         humanScoreNumber++   //Código de pontuação
         humanScore.innerHTML = humanScoreNumber  //Código de pontuação
         result.innerHTML = "Você Ganhou!"
@@ -77,3 +89,5 @@ const machineScore = document.querySelector('#machine-score')   //Código de pon
 
 let humanScoreNumber = 0   //Código de pontuação
 let machineScoreNumber = 0   //Código de pontuação
+
+
